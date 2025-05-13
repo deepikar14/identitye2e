@@ -1,43 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-11T02:24:42 BST" name="MotorwaySuite" finished-at="2025-05-11T02:25:17 BST" duration-ms="35108">
+  <suite started-at="2025-05-13T01:40:33 BST" name="MotorwaySuite" finished-at="2025-05-13T01:41:21 BST" duration-ms="48031">
     <groups>
-      <group name="regression">
-        <method signature="InvalidRegistrationTest.InvalidInput()[pri:0, instance:tests.InvalidRegistrationTest@4cc451f2]" name="InvalidInput" class="tests.InvalidRegistrationTest"/>
-        <method signature="LoginTest.testEnterRegistrationAndClickValueYourCar()[pri:0, instance:tests.LoginTest@6adbc9d]" name="testEnterRegistrationAndClickValueYourCar" class="tests.LoginTest"/>
-      </group> <!-- regression -->
     </groups>
-    <test started-at="2025-05-11T02:24:42 BST" name="RegressionTests" finished-at="2025-05-11T02:25:17 BST" duration-ms="35108">
+    <test started-at="2025-05-13T01:40:33 BST" name="RegressionTests" finished-at="2025-05-13T01:41:21 BST" duration-ms="48031">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@6adbc9d]" started-at="2025-05-11T02:25:02 BST" name="setUp" finished-at="2025-05-11T02:25:05 BST" duration-ms="3644" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@7b9a4292]" started-at="2025-05-13T01:40:33 BST" name="setUp" finished-at="2025-05-13T01:40:38 BST" duration-ms="5009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testEnterRegistrationAndClickValueYourCar()[pri:0, instance:tests.LoginTest@6adbc9d]" started-at="2025-05-11T02:25:05 BST" name="testEnterRegistrationAndClickValueYourCar" finished-at="2025-05-11T02:25:17 BST" duration-ms="11845" status="PASS">
+        <test-method signature="testCompareDynamicInputOutputPairs()[pri:0, instance:tests.LoginTest@7b9a4292]" started-at="2025-05-13T01:40:38 BST" name="testCompareDynamicInputOutputPairs" finished-at="2025-05-13T01:41:21 BST" duration-ms="42633" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed for one or more registrations:
+FAIL: No expected data for BW57BOW in car_input_1.txt]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed for one or more registrations:
+FAIL: No expected data for BW57BOW in car_input_1.txt
+at org.testng.Assert.fail(Assert.java:111)
+at tests.LoginTest.testCompareDynamicInputOutputPairs(LoginTest.java:117)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEnterRegistrationAndClickValueYourCar -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6adbc9d]" started-at="2025-05-11T02:25:17 BST" name="tearDown" finished-at="2025-05-11T02:25:17 BST" duration-ms="268" status="PASS">
+        </test-method> <!-- testCompareDynamicInputOutputPairs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@7b9a4292]" started-at="2025-05-13T01:41:21 BST" name="tearDown" finished-at="2025-05-13T01:41:21 BST" duration-ms="309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.LoginTest -->
-      <class name="tests.InvalidRegistrationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.InvalidRegistrationTest@4cc451f2]" started-at="2025-05-11T02:24:42 BST" name="setUp" finished-at="2025-05-11T02:24:48 BST" duration-ms="5726" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="InvalidInput()[pri:0, instance:tests.InvalidRegistrationTest@4cc451f2]" started-at="2025-05-11T02:24:48 BST" name="InvalidInput" finished-at="2025-05-11T02:25:01 BST" duration-ms="13217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvalidInput -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.InvalidRegistrationTest@4cc451f2]" started-at="2025-05-11T02:25:01 BST" name="tearDown" finished-at="2025-05-11T02:25:02 BST" duration-ms="320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.InvalidRegistrationTest -->
     </test> <!-- RegressionTests -->
   </suite> <!-- MotorwaySuite -->
 </testng-results>

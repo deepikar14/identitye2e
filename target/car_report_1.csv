@@ -1,0 +1,5 @@
+Registration,Expected Year,Actual Year,Expected Make & Model,Actual Make & Model,Result
+AD58VNF,2008,2008,BMW 120D M SPORT,BMW 120D M Sport,PASS
+BW57BOW,-,Year not found,-,Make/Model not found,FAIL
+KT17DLX,2017,2017,SKODA SUPERB SPORTLINE TDI S-A,Skoda Superb Sportline TDI S-A,PASS
+SG18HTN,2018,2018,VOLKSWAGEN GOLF SE NAVIGATION TSI EVO,Volkswagen Golf SE Navigation TSI EVO,PASS

@@ -2,15 +2,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [MotorwaySuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="RegressionTests(failed)">
-    <groups>
-      <run>
-        <include name="regression"/>
-      </run>
-    </groups>
     <classes>
       <class name="tests.LoginTest">
         <methods>
-          <include name="testEnterRegistrationAndClickValueYourCar"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testCompareDynamicInputOutputPairs"/>
         </methods>
       </class> <!-- tests.LoginTest -->
     </classes>
